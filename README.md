@@ -4,7 +4,7 @@ start react project without using `CRA` or `VITE` boilerplates.
 
 ## Setup List
 
-- [ ] `package.json`
+- [x] `package.json`
 - [x] `eslint`
 - [ ] `stylelint`
 - [x] `prettier`
@@ -12,6 +12,6 @@ start react project without using `CRA` or `VITE` boilerplates.
 - [x] `tsconfig.json`
 - [x] `webpack.config.js`
 - [x] `babelrc`
-- [ ] `styed-components`
+- [x] `styed-components`
 
 

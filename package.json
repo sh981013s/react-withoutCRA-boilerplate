@@ -7,7 +7,7 @@
     "start": "webpack serve --open --hot",
     "build": "webpack",
     "test": "echo no test yet",
-    "lint-fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix && prettier 'src/**/*.{js,jsx,ts,tsx}' --write"
+    "lint-fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix && stylelint 'src/**/*.{js,jsx,ts,tsx}' --fix && prettier 'src/**/*.{js,jsx,ts,tsx}' --write"
   },
   "repository": {
     "type": "git",
@@ -45,9 +45,16 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "postcss-styled-syntax": "^0.4.0",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.3",
-    "typescript": "^5.1.5",
+    "stylelint": "^15.9.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^5.1.0",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
