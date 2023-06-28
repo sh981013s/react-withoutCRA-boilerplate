@@ -6,7 +6,7 @@ start react project without using `CRA` or `VITE` boilerplates.
 
 - [x] `package.json`
 - [x] `eslint`
-- [ ] `stylelint`
+- [x] `stylelint`
 - [x] `prettier`
 - [x] `husky`
 - [x] `tsconfig.json`
