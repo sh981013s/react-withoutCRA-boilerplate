@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --hot",
     "build": "webpack",
-    "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix"
+    "test": "echo no test yet"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
     "url": "https://github.com/sh981013s/react-withoutCRA-boilerplate/issues"
   },
   "homepage": "https://github.com/sh981013s/react-withoutCRA-boilerplate#readme",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -41,6 +47,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.3",
     "typescript": "^5.1.5",
