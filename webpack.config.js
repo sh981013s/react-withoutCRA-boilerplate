@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.tsx',
   module: {
     rules: [
@@ -30,6 +31,8 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: './dist',
+    }
   },
 };
