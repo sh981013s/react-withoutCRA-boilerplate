@@ -23,9 +23,14 @@
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.1.4",
     "typescript": "^5.1.5"
   }
 }
