@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   text-align: center;
-  color: #42zf;
+  color: #42f;
 `;
 
 const App = () => (

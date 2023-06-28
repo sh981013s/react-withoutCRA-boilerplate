@@ -1,3 +1,4 @@
+const path = require('node:path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,9 +9,7 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
@@ -23,7 +22,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -32,7 +31,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: './dist',
-    }
+      directory: path.resolve(__dirname, 'dist'),
+    },
   },
 };
