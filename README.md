@@ -10,7 +10,7 @@ start react project without using `CRA` or `VITE` boilerplates.
 - [x] `prettier`
 - [ ] `husky`
 - [x] `tsconfig.json`
-- [ ] `webpack.config.js`
+- [x] `webpack.config.js`
 - [x] `babelrc`
 - [ ] `styed-components`
 

@@ -4,7 +4,9 @@
   "description": "start react project without using `CRA` or `VITE` boilerplates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open --hot",
+    "build": "webpack",
+    "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix"
   },
   "repository": {
     "type": "git",
@@ -30,13 +32,20 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@types/styled-components": "^5.1.26",
+    "babel-loader": "^9.1.2",
     "babel-plugin-styled-components": "^2.1.4",
+    "css-loader": "^6.8.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.3",
     "prettier": "^2.8.8",
-    "typescript": "^5.1.5"
+    "style-loader": "^3.3.3",
+    "typescript": "^5.1.5",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
