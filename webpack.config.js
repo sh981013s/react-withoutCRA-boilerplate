@@ -4,6 +4,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.[hash].js',
+    assetModuleFilename: 'static/[hash][ext][query]',
+    clean: true,
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,
+    host: 'localhost',
+  },
   module: {
     rules: [
       {
@@ -54,18 +69,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
   ],
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'dist'),
-    },
-  },
 };
